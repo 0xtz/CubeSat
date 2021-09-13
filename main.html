@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head> <meta charset="utf-8"> <title> CubeSat </title> </head>
+<body>
+<style>
+body{margin: 0;font-family: monospace;}
+li{list-style-type: none;display: inline;margin: 0 5px;font-size: 20px;}
+nav{width: 100vw;background-color: #D6EFFF;}
+ul{margin: 0;padding: 0;}
+a {text-decoration: none;color: black;padding: 2vw;}
+footer {text-align: center;padding: 3px;width: 100%;}
+#footer {position: fixed;padding: 10px 10px 0px 10px;bottom: 0;width: 100%;height: 30px;background-color: #D6EFFF;color: black;text-align:center;}
+</style> </head>
+<body>
+<nav><ul><li><a> CubeSat Team Morocco </a></li> <li><a> FirstGlobal </a></li></ul></nav>
+<!-- Le reste du contenu --> 
+    <p id="Date" style="text-align:center; font-size: 20px;" >  </p> <br> <p style="text-align:center; font-size: 20px;"> 1. Temperature :  $temp °C</p><br><p style="text-align:center; font-size: 20px;"> 2. Audio : $audio</p> <br><p style="text-align:center; font-size: 20px;"> 3. Ultra : $valu   </p><br> <p style="text-align:center; font-size: 20px;"> 4. idk : $$$$$$ </p> <br>
+<div id="footer">@Copyright | Team Morocco 2021 - All Right Reserved.</div>
+<script>
+setTimeout(function(){
+   window.location.reload(1);
+}, 1000); 
+// the Date Display
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var dateTime = 'Date '+date+' '+time;
+document.getElementById("Date").innerHTML = dateTime
+</script> </body> </html>
