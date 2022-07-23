@@ -18,8 +18,8 @@ File myFile;
 RTC_DS3231 rtc;
 char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 // ----------------------- WEBSERVER 
-char ssid[] = "Wifi Mossadaq";        
-char pass[] = "mossadaq1956wifi";     
+char ssid[] = "SSID";        
+char pass[] = "NETWORK_KEY";     
 int keyIndex = 0;                      
 int status = WL_IDLE_STATUS;          //connection status
 WiFiServer server(80);                //server socket port 
